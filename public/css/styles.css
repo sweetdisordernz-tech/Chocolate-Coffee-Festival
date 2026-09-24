@@ -539,6 +539,7 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
+.product-grid--hamper { margin-bottom: 40px; }
 .product-photo--hero {
   grid-column: 1 / -1;
   aspect-ratio: 990 / 1400;
