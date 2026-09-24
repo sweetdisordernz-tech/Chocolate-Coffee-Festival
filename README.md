@@ -36,12 +36,12 @@ company ID `Tvjjzr`, and the form itself (`<div class="klaviyo-form-X7wWZm">`)
 is embedded and centred on the page. If the form ID ever changes, update
 both the div's class and, if needed, the company ID in that same script tag.
 
-### 2. Real logo
+### 2. Real logo — done
 
-Save the logo file as `public/sweet-disorder-logo.png`. The header already
-points at that path (`public/index.html`, inside `.header-logo`) — it'll
-appear automatically, no code change needed. Until the file exists, a text
-wordmark fallback is shown instead.
+`public/sweet-disorder-logo.png` is the real badge mark (background
+made transparent so it sits cleanly on the cream header). The header
+in `public/index.html` (`.header-logo`) already points at that path —
+to swap the logo later, replace the file at the same path or filename.
 
 ### 3. Product photos — done
 
