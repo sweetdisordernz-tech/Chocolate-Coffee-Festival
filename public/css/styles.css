@@ -636,12 +636,12 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 18px 0;
+  padding: 18px 20px;
   font-size: 0.78rem;
   opacity: 0.85;
 }
 .site-footer__utilities-inner a:hover { text-decoration: underline; }
 
 @media (max-width: 700px) {
-  .site-footer__inner { grid-template-columns: 1fr; gap: 28px; padding: 40px 0 24px; }
+  .site-footer__inner { grid-template-columns: 1fr; gap: 28px; padding: 40px 20px 24px; }
 }
