@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Francois+One&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css">
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 
 <!--
   KLAVIYO SETUP
@@ -144,7 +145,13 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="wrap hero__inner">
+    <div class="hero__dots" aria-hidden="true"></div>
+    <div class="wrap hero__inner reveal">
+      <div class="hero__badge" aria-hidden="true">
+        <span class="hero__badge-eyebrow">Win</span>
+        <span class="hero__badge-amount">$250+</span>
+        <span class="hero__badge-label">Hamper</span>
+      </div>
       <p class="hero__eyebrow">Choc + Coffee Festival</p>
       <h1 class="hero__headline">Thanks for Stopping By!</h1>
       <p class="hero__body">
@@ -161,8 +168,20 @@
   <!-- ============ ENTRY FORM ============ -->
   <section class="entry" id="enter">
     <div class="wrap entry__inner">
-      <div class="entry__card">
-        <p class="entry__eyebrow">Win a $250+ Hamper</p>
+      <div class="entry__card reveal">
+        <span class="entry__notch entry__notch--left" aria-hidden="true"></span>
+        <span class="entry__notch entry__notch--right" aria-hidden="true"></span>
+
+        <div class="entry__stub">
+          <svg class="entry__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 8.5V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2.5a1.5 1.5 0 0 0 0 3V14a1.5 1.5 0 0 0 0 3v2.5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V17a1.5 1.5 0 0 0 0-3v-2.5a1.5 1.5 0 0 0 0-3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M14.5 4.5v15" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2.5 2.5"/>
+          </svg>
+          <p class="entry__eyebrow">Win a $250+ Hamper</p>
+        </div>
+
+        <div class="entry__perforation" aria-hidden="true"></div>
+
         <h2 class="entry__heading">Enter the Draw</h2>
         <p class="entry__sub">Pop your details in below — it takes ten seconds, and your 20% off code lands straight in your inbox.</p>
 
@@ -176,7 +195,7 @@
   <!-- ============ PRODUCT SHOWCASE ============ -->
   <section class="showcase">
     <div class="wrap">
-      <div class="showcase__heading">
+      <div class="showcase__heading reveal">
         <p class="showcase__eyebrow">While You're Here</p>
         <h2 class="showcase__title">A Little Taste of What We Do</h2>
       </div>
@@ -188,27 +207,27 @@
           below will pick the image up automatically with no layout changes —
           until then it shows a placeholder frame.
         -->
-        <div class="product-photo">
+        <div class="product-photo reveal" style="--i:0">
           <img src="public/images/product-1.jpg" alt="Retro sweets gift box" loading="lazy" onerror="this.style.display='none'">
           <span class="product-photo__fallback" aria-hidden="true">Product Photo</span>
         </div>
-        <div class="product-photo">
+        <div class="product-photo reveal" style="--i:1">
           <img src="public/images/product-2.jpg" alt="Sweet Disorder gift hamper" loading="lazy" onerror="this.style.display='none'">
           <span class="product-photo__fallback" aria-hidden="true">Product Photo</span>
         </div>
-        <div class="product-photo">
+        <div class="product-photo reveal" style="--i:2">
           <img src="public/images/product-3.jpg" alt="Kiwiana lolly mix" loading="lazy" onerror="this.style.display='none'">
           <span class="product-photo__fallback" aria-hidden="true">Product Photo</span>
         </div>
-        <div class="product-photo">
+        <div class="product-photo reveal" style="--i:3">
           <img src="public/images/product-4.jpg" alt="Retro soy candle" loading="lazy" onerror="this.style.display='none'">
           <span class="product-photo__fallback" aria-hidden="true">Product Photo</span>
         </div>
-        <div class="product-photo">
+        <div class="product-photo reveal" style="--i:4">
           <img src="public/images/product-5.jpg" alt="Sweet Disorder sweet bag" loading="lazy" onerror="this.style.display='none'">
           <span class="product-photo__fallback" aria-hidden="true">Product Photo</span>
         </div>
-        <div class="product-photo">
+        <div class="product-photo reveal" style="--i:5">
           <img src="public/images/product-6.jpg" alt="Retro award badge tin" loading="lazy" onerror="this.style.display='none'">
           <span class="product-photo__fallback" aria-hidden="true">Product Photo</span>
         </div>
@@ -222,9 +241,11 @@
 
 </main>
 
+<div class="zigzag-divider" aria-hidden="true"></div>
+
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
-  <div class="wrap site-footer__inner">
+  <div class="wrap site-footer__inner reveal">
 
     <div class="site-footer__col site-footer__col--brand">
       <span class="site-footer__logo">Sweet Disorder</span>
