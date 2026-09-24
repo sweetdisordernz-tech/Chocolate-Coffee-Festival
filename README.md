@@ -52,19 +52,16 @@ sweetdisorder.co.nz (`target="_blank"`):
 | File | Product |
 | --- | --- |
 | `product-fartsuppressants.webp` | Fart Suppressants |
-| `product-card.jpg` | Emergency Card Stash (Christmas Edition) |
-| `product-thymeout.jpg` | Thyme Out |
-| `product-firstaid.jpg` | First Aid Survival Kit |
-| `product-chillout-treatmint.jpg` | Chill Out Treatmint |
+| `product-card.webp` | Emergency Card Stash (Christmas Edition) |
+| `product-thymeout.webp` | Thyme Out |
+| `product-firstaid.webp` | First Aid Survival Kit |
+| `product-chillout-treatmint.webp` | Chill Out Treatmint |
 | `product-yourock.webp` | You Rock |
 
-`product-card.jpg`, `product-thymeout.jpg`, `product-firstaid.jpg`,
-and `product-chillout-treatmint.jpg` are cropped from the hamper
-flat-lay (no dedicated studio photo existed for those four) — swap in
-a proper product shot any time by replacing the file at the same path,
-or update the `src`/`href` pair in `public/index.html` if the filename
-changes too. `product-bearhugs.webp` is no longer used on the page but
-is still in the repo if needed later.
+All six are real studio product photos. To swap any of them out later,
+replace the file at the same path, or update the `src`/`href` pair in
+`public/index.html` if the filename changes too. `product-bearhugs.webp`
+is no longer used on the page but is still in the repo if needed later.
 
 ## Local preview
 
