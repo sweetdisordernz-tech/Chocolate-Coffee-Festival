@@ -9,7 +9,7 @@
 
   --color-accent: #108474;       /* primary brand accent (buttons, CTAs) */
   --color-accent-hover: #0b6a5c;
-  --color-teal: #42bab5;         /* secondary teal used on the live site */
+  --color-teal: #41bab5;         /* secondary teal used on the live site */
   --color-cream: #faf9f6;        /* live site header / section background */
   --color-white: #ffffff;
   --color-ink: #1a1a1a;          /* near-black body text */
@@ -508,12 +508,17 @@ h1, h2, h3, h4 {
   margin: 20px 0 24px;
 }
 
-.entry__heading { font-size: clamp(1.8rem, 4vw, 2.4rem); margin-bottom: 12px; }
-.entry__sub { color: var(--color-ink-soft); margin: 0 0 28px; }
-
 /* Klaviyo embed container — keeps the form from collapsing before the
    Klaviyo script has finished loading and rendering it in place. */
 .klaviyo-form-X7wWZm { min-height: 160px; text-align: left; }
+
+.entry__disclaimer {
+  margin: 16px 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-ink-soft);
+  text-align: center;
+}
 
 /* ============ PRODUCT SHOWCASE ============ */
 
