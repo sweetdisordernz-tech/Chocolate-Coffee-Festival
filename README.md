@@ -12,19 +12,25 @@ competition entry.
 
 ## Project structure
 
+Everything that gets served lives inside `public/` — that's the site root:
+
 ```
-index.html          the whole page
-css/styles.css       styling (brand tokens live at the top as CSS variables)
-js/main.js            mobile menu + dropdown behaviour
-public/sweet-disorder-logo.png   header logo (see below)
-public/images/product-1.jpg …    product showcase photos (see below)
+public/index.html                the whole page
+public/css/styles.css             styling (brand tokens live at the top as CSS variables)
+public/js/main.js                  mobile menu + dropdown behaviour + scroll effects
+public/sweet-disorder-logo.png    header logo (see below)
+public/images/product-1.jpg …     product showcase photos (see below)
 ```
+
+(Vercel's zero-config static deploy uses `public/` as the output directory
+by default when one exists — putting the site there avoids needing any
+extra Vercel project configuration.)
 
 ## Finishing setup
 
 ### 1. Klaviyo company ID
 
-Open `index.html`, find this line in `<head>`:
+Open `public/index.html`, find this line in `<head>`:
 
 ```html
 <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=KLAVIYO_COMPANY_ID_PLACEHOLDER"></script>
@@ -37,8 +43,8 @@ is already embedded and centred on the page.
 ### 2. Real logo
 
 Save the logo file as `public/sweet-disorder-logo.png`. The header already
-points at that path (`index.html`, inside `.header-logo`) — it'll appear
-automatically, no code change needed. Until the file exists, a text
+points at that path (`public/index.html`, inside `.header-logo`) — it'll
+appear automatically, no code change needed. Until the file exists, a text
 wordmark fallback is shown instead.
 
 ### 3. Product photos
@@ -51,20 +57,21 @@ needed. Placeholder frames show until then.
 
 ## Local preview
 
-No build step — just serve the folder statically, e.g.:
+No build step — just serve the `public` folder statically, e.g.:
 
 ```bash
-npx serve .
+npx serve public
 ```
 
-or open `index.html` directly in a browser.
+or open `public/index.html` directly in a browser.
 
 ## Deploying to Vercel
 
 1. Push this repo to GitHub.
 2. In Vercel, "Add New… → Project", import the repo.
-3. Framework preset: **Other** (no build command, no output directory —
-   it's plain static files served from the repo root).
+3. Framework preset: **Other**. Leave Build Command and Output Directory
+   on their defaults — Vercel will automatically serve `public/` as the
+   site root, no override needed.
 4. Deploy.
 
 Every nav link, the "Shop Now" header button, and the "Shop All Gifts"
