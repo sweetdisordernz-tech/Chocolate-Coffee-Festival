@@ -19,7 +19,8 @@ public/index.html                the whole page
 public/css/styles.css             styling (brand tokens live at the top as CSS variables)
 public/js/main.js                  mobile menu + dropdown behaviour + scroll effects
 public/sweet-disorder-logo.png    header logo (see below)
-public/images/product-1.jpg …     product showcase photos (see below)
+public/images/hamper.jpg          hamper prize photo (showcase grid)
+public/images/product-*.webp      individual product photos (showcase grid)
 ```
 
 (Vercel's zero-config static deploy uses `public/` as the output directory
@@ -42,13 +43,14 @@ points at that path (`public/index.html`, inside `.header-logo`) — it'll
 appear automatically, no code change needed. Until the file exists, a text
 wordmark fallback is shown instead.
 
-### 3. Product photos
+### 3. Product photos — done
 
-Save photos as `public/images/product-1.jpg` through `product-6.jpg`
-(square images, ~1200×1200px work best). Each of the six grid slots in the
-"A Little Taste of What We Do" section already points at those exact
-filenames — they'll appear automatically once saved, no layout changes
-needed. Placeholder frames show until then.
+The "A Little Taste of What We Do" grid shows four real photos:
+`public/images/hamper.jpg` (the prize hamper) plus three individual
+product shots (`product-bearhugs.webp`, `product-fartsuppressants.webp`,
+`product-yourock.webp`). To swap any of them out, replace the file at
+the same path and filename, or update the `src` in `public/index.html`
+if you're changing filenames too.
 
 ## Local preview
 

@@ -536,7 +536,7 @@ h1, h2, h3, h4 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 .product-photo {
@@ -566,18 +566,10 @@ h1, h2, h3, h4 {
 @media (hover: hover) {
   .product-photo:hover img { transform: scale(1.05); }
 }
-.product-photo__fallback {
-  font-family: var(--font-heading);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.8rem;
-  color: var(--color-ink-soft);
-}
-
 .showcase__cta { text-align: center; margin-top: 40px; }
 
 @media (max-width: 640px) {
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .product-grid { gap: 10px; }
 }
 
 /* ============ FOOTER ============ */
