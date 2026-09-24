@@ -28,17 +28,12 @@ extra Vercel project configuration.)
 
 ## Finishing setup
 
-### 1. Klaviyo company ID
+### 1. Klaviyo company ID — done
 
-Open `public/index.html`, find this line in `<head>`:
-
-```html
-<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=KLAVIYO_COMPANY_ID_PLACEHOLDER"></script>
-```
-
-Replace `KLAVIYO_COMPANY_ID_PLACEHOLDER` with your real public company ID.
-That's the only change needed — the form itself (`<div class="klaviyo-form-X7wWZm">`)
-is already embedded and centred on the page.
+The loader script in `public/index.html` `<head>` is already wired to
+company ID `Tvjjzr`, and the form itself (`<div class="klaviyo-form-X7wWZm">`)
+is embedded and centred on the page. If the form ID ever changes, update
+both the div's class and, if needed, the company ID in that same script tag.
 
 ### 2. Real logo
 
