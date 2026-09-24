@@ -19,8 +19,8 @@ public/index.html                the whole page
 public/css/styles.css             styling (brand tokens live at the top as CSS variables)
 public/js/main.js                  mobile menu + dropdown behaviour + scroll effects
 public/sweet-disorder-logo.png    header logo (see below)
-public/images/hamper.jpg          hamper prize photo (showcase grid)
-public/images/product-*.webp      individual product photos (showcase grid)
+public/images/hamper.jpg          hamper prize photo (showcase hero banner)
+public/images/product-*.{webp,jpg}  6 linked product photos (showcase grid)
 ```
 
 (Vercel's zero-config static deploy uses `public/` as the output directory
@@ -45,12 +45,26 @@ to swap the logo later, replace the file at the same path or filename.
 
 ### 3. Product photos — done
 
-The "A Little Taste of What We Do" grid shows four real photos:
-`public/images/hamper.jpg` (the prize hamper) plus three individual
-product shots (`product-bearhugs.webp`, `product-fartsuppressants.webp`,
-`product-yourock.webp`). To swap any of them out, replace the file at
-the same path and filename, or update the `src` in `public/index.html`
-if you're changing filenames too.
+`public/images/hamper.jpg` is the hero banner above the heading. Below
+it, six product photos each link out to their real product page on
+sweetdisorder.co.nz (`target="_blank"`):
+
+| File | Product |
+| --- | --- |
+| `product-fartsuppressants.webp` | Fart Suppressants |
+| `product-card.jpg` | Emergency Card Stash (Christmas Edition) |
+| `product-thymeout.jpg` | Thyme Out |
+| `product-firstaid.jpg` | First Aid Survival Kit |
+| `product-chillout-treatmint.jpg` | Chill Out Treatmint |
+| `product-yourock.webp` | You Rock |
+
+`product-card.jpg`, `product-thymeout.jpg`, `product-firstaid.jpg`,
+and `product-chillout-treatmint.jpg` are cropped from the hamper
+flat-lay (no dedicated studio photo existed for those four) — swap in
+a proper product shot any time by replacing the file at the same path,
+or update the `src`/`href` pair in `public/index.html` if the filename
+changes too. `product-bearhugs.webp` is no longer used on the page but
+is still in the repo if needed later.
 
 ## Local preview
 
